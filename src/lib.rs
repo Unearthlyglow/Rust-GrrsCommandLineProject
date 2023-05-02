@@ -1,13 +1,14 @@
-use std::error::Error;
+use anyhow::Result;
 
 pub fn find_matches(
     content: &str,
     pattern: &str,
     mut writer: impl std::io::Write,
-) -> Result<(), std::error::Error> {
+) -> Result<(), anyhow::Error> {
     for line in content.lines() {
         if line.contains(pattern) {
             writeln!(writer, "{}", line)?;
         }
     }
+    Ok(())
 }
