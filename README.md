@@ -1,6 +1,6 @@
 # Docs
 
-This is a project to test out `rustdoc`.
+This is a project created to help me better my CLI skills and rustdoc skills. 
 
 [Here is a link!](https://www.rust-lang.org)
 
