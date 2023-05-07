@@ -32,6 +32,37 @@ fn find_a_match() {
     assert_eq!(result, b"lorem ipsum\n");
 }
 
+//Code Breakdown
+
+#[derive(Parser)]
+{
+    // Attributes available to this derive:
+    #[clap]
+    #[structopt]
+    #[command]
+    #[arg]
+    #[group]
+}
+
+The derive attribute allows new items to be automatically generated for data structures. The derive attribute is used to specify which traits to automatically implement for the data structure. The derive attribute is used like this: #[derive(Trait1, Trait2, ...)].
+
+The following:
+
+#[derive(PartialEq, Clone)]
+struct Foo<T> {
+    a: i32,
+    b: T,
+}
+
+is equivalent to:
+
+impl<T: PartialEq> PartialEq for Foo<T> {
+    fn eq(&self, other: &Foo<T>) -> bool {
+        self.a == other.a && self.b == other.b
+    }
+}
+
+
 //Notes::
 
 
