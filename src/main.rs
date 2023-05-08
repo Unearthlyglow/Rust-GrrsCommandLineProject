@@ -34,8 +34,6 @@ fn find_a_match() {
 
 //Notes::
 
-
-
 //Dev Dependencies vs Dependencies in Rust.
 
 //A note on printing performance
@@ -107,3 +105,13 @@ fn find_a_match() {
 // It is also a good idea not to focus your tests on things you can’t actively control. It would be a bad idea to test the exact layout of --help as it is generated for you. Instead, you might just want to check that certain elements are present.
 
 // Depending on the nature of your program, you can also try to add more testing techniques. For example, if you have extracted parts of your program and find yourself writing a lot of example cases as unit tests while trying to come up with all the edge cases, you should look into proptest. If you have a program which consumes arbitrary files and parses them, try to write a fuzzer to find bugs in edge cases.
+
+//In-depth Topics
+
+//Using config files:: I should check out the " confy " crate along with the information for it here: https://docs.rs/confy/0.3.1/confy/
+
+//Exit Codes
+//https://crates.io/crates/exitcode
+
+//Communicating with Humans in regards to PANICS
+//https://crates.io/crates/human-panic
