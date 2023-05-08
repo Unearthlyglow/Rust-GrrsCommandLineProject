@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":[["EnumExample","An example of strikethrough text. This is an example of a footnote. : This text is the contents of the footnote, which will be rendered"]],"fn":[["example","Example"],["pizza_roo","Testing Out some documentation stuff AND MORE"]],"mod":[["ModuleExample",""]],"struct":[["Jubilee",""]]};

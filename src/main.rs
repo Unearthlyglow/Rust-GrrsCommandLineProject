@@ -16,6 +16,10 @@ struct Cli {
 struct CustomError(String);
 
 fn main() -> Result<(), anyhow::Error> {
+
+    for n in 1..=100 {
+        
+    }
     let args = Cli::parse();
     let content = std::fs::read_to_string(&args.path)
         .with_context(|| format!("could not read file `{}`", args.path.display()))?;
@@ -31,6 +35,8 @@ fn find_a_match() {
     grrs::find_matches("lorem ipsum\ndolor sit amet", "lorem", &mut result);
     assert_eq!(result, b"lorem ipsum\n");
 }
+
+//Code Breakdown
 
 //Notes::
 

@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"learning":[["impl Freeze for <a class=\"struct\" href=\"learning/struct.Jubilee.html\" title=\"struct learning::Jubilee\">Jubilee</a>",1,["learning::Jubilee"]],["impl Freeze for <a class=\"enum\" href=\"learning/enum.EnumExample.html\" title=\"enum learning::EnumExample\">EnumExample</a>",1,["learning::EnumExample"]]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
